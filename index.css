@@ -185,7 +185,7 @@ body {
 }
 .third-section{
 
-    background:linear-gradient(to bottom, transparent,10%,var(--secondary-bg));
+    background:linear-gradient(to bottom, transparent,5%,var(--secondary-bg),var(--secondary-bg));
     margin-top:-28%;
     padding-bottom: 35vh;
     position: relative;
@@ -250,7 +250,7 @@ body {
     visibility: visible;
 }
 .third-section .right-wrapper{
-    overflow-y: scroll;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     width: 27vw;
     margin-right:7vw;
@@ -311,47 +311,51 @@ body {
     scrollbar-width: none;  
   }
 
-  .scroll-list-1{
+  .movie-list-1{
     margin-top: 5vh;
    
   }
-  .sc-list-1{
+  .movie-list{
     padding:1vh 0 5vh 0;
     width: 89vw;
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
   }
 /* Hide scrollbar for Chrome, Safari and Opera */
-.third-section .sc-list-1::-webkit-scrollbar {
+.third-section .movie-list::-webkit-scrollbar {
     display: none;
   }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  .third-section .sc-list-1 {
+  .third-section .movie-list {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
-  .sc-list-1 .img-wrapper img{
+  .movie-list .img-wrapper img{
     width: 19vw;
     border-radius: 7px;
     margin-right: .5vw;
+  
   }
-  .sc-list-1 h2{
+  .movie-list h2{
+    margin-left: .8em;
+    opacity: 0.5;
+  }
+  .movie-list h3{
     margin-left: .8em;
   }
-  .sc-list-1 h3{
-    margin-left: .8em;
-  }
-  .sc-list-1 .scroller-left,.scroller-right{
+  .movie-list .scroller-left,.scroller-right{
     padding: 8vh 0;
     position: absolute;
   }
-  .sc-list-1 .scroller-left img,.scroller-right img{
+  .movie-list .scroller-left img,.scroller-right img{
     width: 3vw;
   }
-  .sc-list-1 .scroller-right{
+  .movie-list .scroller-left{
     right: 1vw;
   }
+
 
 @media only screen and (max-width: 660px) {
     .banner{
