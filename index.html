@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+   <section class="left-nav">
+    <div class="logo-container">
+        <img src="./stock/D_Hotstar_logo_Dark_BG_120x120-removebg-preview (1).png" alt="">
+       <p class="upgrade-link">Upgrade></p>
+    </div>
+    <div class="link-wrapper">
+    <div class="nav-link my-spacwe">
+        <img src="./stock/38.webp" alt="">
+        <h3 class="title1">My Spaces</h3>
+    </div>
+    <div class="nav-link search">
+        <img src="./stock/icons8-search-100.png" alt="">
+        <h3 class="title2">Search</h3>
+    </div>
+    <div class="nav-link home">
+        <img src="./stock/home.png" alt="">
+        <h3 class="title3">Home</h3>
+    </div>
+    <div class="nav-link tv">
+        <img src="./stock/tv.png" alt="">
+        <h3 class="title4">TV</h3>
+    </div>
+    <div class="nav-link movies">
+        <img src="./stock/movie.png" alt="">
+        <h3 class="title5">Movies</h3>
+        
+    </div>
+    <div class="nav-link sports">
+        <img src="./stock/tennis-ball.png" alt="">
+        <h3 class="title6">Sports</h3>
+    </div>
+</div>
+    </section>
+    <section class="banner">
+    
+        <div class="wrapper">
+            <img src="./stock/AashiqanaS4Dtd_deskXbb-06fc9f4e-37a5-4ae3-a90a-57af366cec17.jpg" alt="" class="prod-ad-img">
+            <div class="overlay"></div>
+            <div class="right-wrapper">
+                <div class="ad-name-logo">
+                    <img src="./stock/D_Hotstar_logo_Dark_BG_120x120.png" class="ad-logo" alt="">
+                     <div class="ad-name">
+                        <h6>Aashiqana S4</h6>
+                        <p>Streaming from 24th july</p>
+                    </div>
+                </div>
+                
+                <p class="caption">Darr ke iss mausam me laut aa raha hai Yash aur Chikki ka Aashiqana</p>
+                <button class="watch-btn">Watch Now</button>
+            </div>
+        </div>
+   </section>
+       <section class="second-section">
+        <video autoplay muted loop>
+            <source src="./stock/Frozen 2 _ Official Trailer 2.mp4" type="video/mp4" />
+        </video>
+       </section>
+       <section class="third-section">
+        <div class="left-wrapper">
+            <img src="./stock/PngItem_5368556.png" alt="" id="Trailer-logo">
+            <h6 class="trailer-sub-1">2019 - 1h 43 m .English . <span>U/A 16+</span> </h6>
+            <p class="trailer-sub-2">Sing along with your favorite songs with on-screen <br>lyrics as you watch "Frozen 2"</p>
+            <h6 class="trailer-sub-3">Animation | Fantacy | Musical | Kids</h6>
+
+            <div class="btn-container">
+                <button>
+                    <img src="./stock/play-48.ico" alt="">Watch Now
+                </button>
+                <img src="./stock/watchlist.png" class="add-to-watchlist" alt="">
+                <button id="add-to-play-list-btn">+</button>
+            </div>
+        </div>
+        <div class="right-wrapper">
+            <div class="unmute-trailer">
+            </div>
+            <div class="trailer-list">
+                <button id="scroll-left" onclick="scrollLeftSide()" ><img src="./stock/left-sc.png" alt=""></button>
+                <img src="./stock/trailer1.webp" id="first-trailer" alt="">
+                <img src="./stock/trailer2.webp" alt="">
+                <img src="./stock/trailer3.webp" alt="">
+                <img src="./stock/trailer4.webp" alt="">
+                <img src="./stock/trailer5.webp" alt="">
+                <img src="./stock/trailer6.webp" alt="">
+                <img src="./stock/trailer7.webp" alt="">
+                <img src="./stock/trailer8.webp" alt="">
+                <button id="scroll-right" onclick="scrollRightSide()" ><img src="./stock/right-sc.png" alt=""></button>
+                
+            </div>
+        </div>
+       </section>
+    </div>
+</body>
+
+<script>
+
+/*script for toggling all the options in left nav*/    
+const triggerDiv = document.querySelector('.link-wrapper');
+const hiddenDiv1 = document.querySelector('.title1');
+const hiddenDiv2 = document.querySelector('.title2');
+const hiddenDiv3 = document.querySelector('.title3');
+const hiddenDiv4 = document.querySelector('.title4');
+const hiddenDiv5 = document.querySelector('.title5');
+const hiddenDiv6 = document.querySelector('.title6');
+
+triggerDiv.addEventListener('mouseover', function() {
+    hiddenDiv1.style.display = 'block';
+  hiddenDiv2.style.display = 'block';
+  hiddenDiv3.style.display = 'block';
+  hiddenDiv4.style.display = 'block';
+  hiddenDiv5.style.display = 'block';
+  hiddenDiv6.style.display = 'block';
+});
+
+triggerDiv.addEventListener('mouseout', function() {
+  hiddenDiv1.style.display = 'none';
+  hiddenDiv2.style.display = 'none';
+  hiddenDiv3.style.display = 'none';
+  hiddenDiv4.style.display = 'none';
+  hiddenDiv5.style.display = 'none';
+  hiddenDiv6.style.display = 'none';
+});
+
+/*script for scrolling image trailer in section 3*/
+function scrollRightSide(){
+    console.log('scrolled')
+    document.getElementById('first-trailer').style.marginLeft="-20vw";
+    document.getElementById('scroll-right').style.display = 'none';
+    document.getElementById('scroll-left').style.display = 'block';
+}
+function scrollLeftSide(){
+    console.log('scrolled')
+    document.getElementById('first-trailer').style.marginLeft="0vw";
+    document.getElementById('scroll-right').style.display = 'block';
+    document.getElementById('scroll-left').style.display = 'none';
+}
+
+</script>
+</html>
+ 
