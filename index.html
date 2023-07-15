@@ -84,20 +84,85 @@
             <div class="unmute-trailer">
             </div>
             <div class="trailer-list">
-                <button id="scroll-left" onclick="scrollLeftSide()" ><img src="./stock/left-sc.png" alt=""></button>
-                <img src="./stock/trailer1.webp" id="first-trailer" alt="">
-                <img src="./stock/trailer2.webp" alt="">
+                <img class="tr1" src="./stock/trailer1.webp" id="first-trailer" alt="" class="trailer-cover">
+               
+                <img src="./stock/trailer2.webp" alt="" >
+               
                 <img src="./stock/trailer3.webp" alt="">
-                <img src="./stock/trailer4.webp" alt="">
+                <a href="#first-trailer" id="left-scroll" onclick="scrollL()" ><img src="./stock/left-sc.png" alt=""></a>
+                <img src="./stock/trailer4.webp" alt="" id="left-scroller">
                 <img src="./stock/trailer5.webp" alt="">
-                <img src="./stock/trailer6.webp" alt="">
-                <img src="./stock/trailer7.webp" alt="">
-                <img src="./stock/trailer8.webp" alt="">
-                <button id="scroll-right" onclick="scrollRightSide()" ><img src="./stock/right-sc.png" alt=""></button>
                 
+                <img src="./stock/trailer6.webp" alt="" >
+                <a href="#last-trailer" id="right-scroll" onclick="scrollR()"><img src="./stock/right-sc.png" alt=""></a> 
+                <img src="./stock/trailer7.webp" alt="" id="right-scroller">
+               
+                <img src="./stock/trailer8.webp" alt="" id="last-trailer"> 
             </div>
+          
         </div>
+
+          <section class="scroll-list-1">
+            <h2>Continue Watching for Sreesanjay</h2>
+            <div class="sc-list-1">
+                <div class="scroller-left">
+                    <img src="./stock/left-sc.png" alt="">
+                </div>
+                <div class="scroller-right">
+                    <img src="./stock/right-sc.png" alt="">
+                </div>
+                <div class="img-wrapper">
+                <img src="./stock/sc1-1.webp" alt="">
+                <h3>S12 E4</h3>
+                <p>16m Left</p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div>  
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div> 
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div>             
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div> 
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div> 
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div> 
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div> 
+                <div class="img-wrapper">
+                    <img src="./stock/sc1-1.webp" alt="">
+                    <h3>S12 E4</h3>
+                    <p>16m Left</p>
+                </div> 
+            
+
+            </div>
+           </section> 
+        
        </section>
+   
     </div>
 </body>
 
@@ -129,21 +194,14 @@ triggerDiv.addEventListener('mouseout', function() {
   hiddenDiv5.style.display = 'none';
   hiddenDiv6.style.display = 'none';
 });
-
-/*script for scrolling image trailer in section 3*/
-function scrollRightSide(){
-    console.log('scrolled')
-    document.getElementById('first-trailer').style.marginLeft="-20vw";
-    document.getElementById('scroll-right').style.display = 'none';
-    document.getElementById('scroll-left').style.display = 'block';
+function scrollR(){
+    document.getElementById('left-scroll').style.display = 'block';
+    document.getElementById('right-scroll').style.display = 'none';
 }
-function scrollLeftSide(){
-    console.log('scrolled')
-    document.getElementById('first-trailer').style.marginLeft="0vw";
-    document.getElementById('scroll-right').style.display = 'block';
-    document.getElementById('scroll-left').style.display = 'none';
+function scrollL(){
+    document.getElementById('left-scroll').style.display = 'none';
+    document.getElementById('right-scroll').style.display = 'block';
 }
-
 </script>
 </html>
  
