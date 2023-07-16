@@ -140,38 +140,6 @@ body {
 .banner .wrapper .right-wrapper .watch-btn:hover{
     transform: scale(1.06);
 }
-@media only screen and (max-width: 660px) {
-    .banner{
-        display: block;
-    }
-    .banner .logo-container img {
-        width: 10vh;
-        height: auto;
-        padding-top: 0 ;
-    }
- .banner .wrapper .right-wrapper .ad-name-logo h6,p{
-    font-size:.8em;
-}
-.banner .wrapper .right-wrapper .caption{
-    display: none;
-}
-.banner .wrapper .right-wrapper .ad-name-logo .ad-logo{
-   display: none;
-}
-.banner .wrapper .right-wrapper{
-    padding: 0;
-    padding-left:2vw;
-    margin: 0;
-}
-.banner .wrapper .right-wrapper .watch-btn{
-    padding:.5em .7em;
-    margin-top: 1vh;
-    margin-left: 3vw;
-    font-size: .8em;
- 
-}
-}
-
 
 .second-section{
     position: sticky;
