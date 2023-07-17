@@ -23,7 +23,8 @@ body {
     height: 100vh;
     z-index: 5;
     line-height:3%;
-    background:linear-gradient(to right, rgba(5, 5, 5, 0.9),transparent)
+    background:linear-gradient(to right, rgba(5, 5, 5, 0.9),transparent);
+    cursor: pointer;
     
 }
 .left-nav .link-wrapper{
@@ -68,6 +69,7 @@ body {
     padding-right: 2vw;
     padding-left: 14.7vh;
     display: flex;
+    cursor: pointer;
 }
 
 .logo-container{
@@ -136,6 +138,7 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 8px;
+    cursor: pointer;
 }
 .banner .wrapper .right-wrapper .watch-btn:hover{
     transform: scale(1.06);
@@ -146,6 +149,7 @@ body {
     top: 0;
     z-index: 3;
     overflow: hidden;
+    cursor: pointer;
 }
 .second-section video{
     width: 100vw;
@@ -162,6 +166,7 @@ body {
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
+  
 }
 .third-section .left-wrapper #Trailer-logo {
     width:20vw;
@@ -200,6 +205,7 @@ body {
     border-radius:10px ;
     font-size: 2vh;
     padding: 2vh 10vw;
+    cursor: pointer;
 }
 .third-section .btn-container button img{
     width:2.5vh;
@@ -214,9 +220,6 @@ body {
     margin-top: -5.8vh;
     visibility: hidden;
 }
-#add-to-play-list-btn:hover + .add-to-watchlist{
-    visibility: visible;
-}
 .third-section .right-wrapper{
     margin-right:7vw;
     display: flex;
@@ -228,6 +231,7 @@ body {
     scroll-behavior: smooth;
     width: 27vw;    
     opacity: 0.7;
+    cursor: pointer;
 }
 .third-section .right-wrapper .trailer-container .btn-r,.btn-l{
     width:2vw;
@@ -286,6 +290,7 @@ body {
   .movie-container{
     overflow-x: scroll;
     scroll-behavior: smooth;
+    cursor: pointer;
   }
   .thumbnail-type-1 .movie-list .img-wrapper img{
     width: 20vw;
@@ -357,11 +362,14 @@ body {
   footer #fb{
     width: 1vw;
     margin: 3vw 2vw 0 2vw;
+    cursor: pointer;
   }
   footer #tw{
     width: 2vw;
+    cursor: pointer;
   }
   footer .link-2 img{
     width:7vw;
     margin:3vh 1vw;
+    cursor: pointer;
   }
