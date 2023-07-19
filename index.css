@@ -50,6 +50,9 @@ body {
     margin-left: 20px;
     display: none;
 }
+.left-nav .link-wrapper:hover h3{
+    display: block;
+}
 .left-nav .my-spacwe:hover,.left-nav .search:hover,.left-nav .home:hover,.left-nav .tv:hover,.left-nav .movies:hover,.left-nav .sports:hover{
     opacity: 1;
     transform: scale(1.1);
@@ -206,6 +209,9 @@ body {
     font-size: 2vh;
     padding: 2vh 10vw;
     cursor: pointer;
+}
+.third-section .btn-container button:hover{
+    transform: scale(1.05);
 }
 .third-section .btn-container button img{
     width:2.5vh;
